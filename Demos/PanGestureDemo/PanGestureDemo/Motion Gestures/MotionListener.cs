@@ -58,7 +58,7 @@ namespace MotionGestures
         public override void OnFrame(Controller controller)
         {
             Frame currentFrame = controller.Frame();
-            if (!currentFrame.Hands.Empty)
+            if (!currentFrame.Hands.IsEmpty)
             {
                 //Hand firstHand = currentFrame.Hands[0];
                 //FingerList fingers = firstHand.Fingers;
